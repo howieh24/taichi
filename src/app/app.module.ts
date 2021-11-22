@@ -60,7 +60,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { RegistrationComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +69,7 @@ import { RegisterComponent } from './register/register.component';
     FrontpageComponent,
     FooterComponent,
     LoginComponent,
-    RegisterComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
