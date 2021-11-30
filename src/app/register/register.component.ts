@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, NgForm, FormBuilder} from '@angular/forms';
-import { Injectable } from '@angular/core';
 import { UserInfoService } from '../Service/userinfo.service';
 
 interface salutation {
@@ -10,12 +9,11 @@ interface salutation {
 
 @Component({
   selector: 'app-registration',
-  templateUrl: './registration.component.html',
-  styleUrls: ['./registration.component.css']
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
   
-@Injectable()
-export class RegistrationComponent implements OnInit {
+export class RegisterComponent implements OnInit {
   userInfo!: FormGroup;
 
   salutationList: salutation[] = [

@@ -60,7 +60,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { RegistrationComponent } from './register/register.component';
+import { AdminpageComponent } from './adminpage/adminpage.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { NewsComponent } from './news/news.component';
+import { RegisterComponent } from './register/register.component';
+import { ClassscheduleComponent } from './classschedule/classschedule.component';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +75,13 @@ import { RegistrationComponent } from './register/register.component';
     FrontpageComponent,
     FooterComponent,
     LoginComponent,
-    RegistrationComponent
+    AdminpageComponent,
+    AboutusComponent,
+    ContactusComponent,
+    NewsComponent,
+    RegisterComponent,
+    ClassscheduleComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +91,12 @@ import { RegistrationComponent } from './register/register.component';
     MatButtonModule,
     RouterModule.forRoot(
       [
-        {path: '', component: FrontpageComponent},
+        {path: '', component: NewsComponent},
+        {path: 'home', component: FrontpageComponent},
+        {path: 'register', component: RegisterComponent},
+        {path: 'news', component: NewsComponent},
+        {path: 'contact', component: ContactusComponent}
+
       ]
     ),
     
