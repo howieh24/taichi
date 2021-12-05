@@ -67,6 +67,10 @@ import { NewsComponent } from './news/news.component';
 import { RegisterComponent } from './register/register.component';
 import { ClassscheduleComponent } from './classschedule/classschedule.component';
 import { PhotosComponent } from './photos/photos.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { ResourcesComponent } from './resources/resources.component';
+
 
 @NgModule({
   declarations: [
@@ -91,12 +95,16 @@ import { PhotosComponent } from './photos/photos.component';
     MatButtonModule,
     RouterModule.forRoot(
       [
-        {path: '', component: NewsComponent},
+        {path: '', component: FrontpageComponent},
         {path: 'home', component: FrontpageComponent},
         {path: 'register', component: RegisterComponent},
         {path: 'news', component: NewsComponent},
-        {path: 'contact', component: ContactusComponent}
-
+        {path: 'contact', component: ContactusComponent},
+        {path: 'login', component: LoginComponent},
+        {path: 'calendar', component: CalendarModule},
+        {path: 'photo', component: PhotosComponent},
+        {path: 'aboutus', component: AboutusComponent},
+        {path: 'resources', component: ResourcesComponent}
       ]
     ),
     
@@ -152,7 +160,13 @@ import { PhotosComponent } from './photos/photos.component';
     NgImageSliderModule,
     CarouselModule,
     WavesModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    BrowserModule,
+    AppRoutingModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    })
     
   ],
   providers: [],
