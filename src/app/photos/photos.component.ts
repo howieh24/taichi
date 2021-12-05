@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./photos.component.css']
 })
 export class PhotosComponent implements OnInit {
+  panelOpenState = true;
 
   constructor() { }
 

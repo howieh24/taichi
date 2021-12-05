@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarView } from 'angular-calendar';
 
 @Component({
   selector: 'app-classschedule',
@@ -11,5 +12,9 @@ export class ClassscheduleComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  viewDate: Date = new Date();
+  view: CalendarView = CalendarView.Month;
+  CalendarView = CalendarView;
 
 }

@@ -16,15 +16,6 @@ interface salutation {
 export class RegisterComponent implements OnInit {
   userInfo!: FormGroup;
 
-  salutationList: salutation[] = [
-    {value: 'prof-0', viewValue: 'Prof'},
-    {value: 'mr-1', viewValue: 'Mr'},
-    {value: 'ms-2', viewValue: 'Ms'},
-    {value: 'mrs-3', viewValue: 'Mrs'},
-    {value: 'dr-4', viewValue: 'Dr'},
-  ]
-  sponsorList: string[] = ['Misson', 'Divatorate', 'Division']
-
   isLinear = false;
 
   constructor(private infoSerivce: UserInfoService, private _formBuilder: FormBuilder) {

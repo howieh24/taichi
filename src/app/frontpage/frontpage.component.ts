@@ -14,14 +14,4 @@ export class FrontpageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  imageObject: Array<object> = [{
-    image: 'assets/IMG_6799.jfif',
-    thumbImage: 'assets/IMG_6799.jfif'
-}, {
-    image: 'assets/IMG_6801.jfif',
-    thumbImage: 'assets/IMG_6801.jfif',
-    order: 1 
-}
-];
-
 }
