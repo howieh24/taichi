@@ -69,7 +69,6 @@ import { ClassscheduleComponent } from './classschedule/classschedule.component'
 import { PhotosComponent } from './photos/photos.component';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
-import { ResourcesComponent } from './resources/resources.component';
 
 
 @NgModule({
@@ -104,7 +103,6 @@ import { ResourcesComponent } from './resources/resources.component';
         {path: 'calendar', component: CalendarModule},
         {path: 'photo', component: PhotosComponent},
         {path: 'aboutus', component: AboutusComponent},
-        {path: 'resources', component: ResourcesComponent}
       ]
     ),
     
