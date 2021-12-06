@@ -1,5 +1,7 @@
-<h2>Register</h2>
-<form [formGroup]="userInfo">
+<div class="container">
+    <form class="mt-5" style="border:2px solid #5892ef;padding:3rem">
+    <h2>Register</h2>
+    <form [formGroup]="userInfo">
     <div class="form-group">
         <label for="firstName">First Name</label>
         <input type="text" formControlName="firstName" class="form-control"/>
@@ -30,3 +32,6 @@
         <a routerLink="/login" class="btn btn-link">Cancel</a>
     </div>
 </form>
+    </form>
+</div>
+
